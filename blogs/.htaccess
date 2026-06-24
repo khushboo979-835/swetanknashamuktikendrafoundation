@@ -1,0 +1,9 @@
+# If this is in /blogs/.htaccess
+RewriteEngine On
+
+# Remove trailing slashes
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)/$ /blogs/$1 [R=301,L]
+
+# Rewrite blogs/slug to blogs/index.php?slug=slug
+RewriteRule ^([\w\-]+)/?$ index1.php?slug=$1 [QSA,L]
