@@ -154,7 +154,7 @@
                 var message = document.getElementById('cmessage').value;
 
                 // WhatsApp number (replace with your number, include country code without +)
-                var whatsappNumber = '917856893645';
+                var whatsappNumber = '919798354410';
 
                 // Construct WhatsApp message
                 var whatsappMessage = `*New Contact Form Submission*\n\n*Name:* ${name}\n*Number:* ${number}\n*Address:* ${address}\n*Service:* ${service}\n*Message:* ${message}`;

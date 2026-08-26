@@ -4,217 +4,377 @@
 <head>
     <?php include("common/config.php"); ?>
     <?php 
-        $page_title = "Best Nasha Mukti Kendra in Patna | Rehab Center in Patna";
-        $page_description = "Searching for the best Nasha Mukti Kendra in Patna? Swetank Nasha Mukti Kendra offers trusted drug and alcohol de-addiction services in Patna. Call now!";
-        $page_keywords = "nasha mukti kendra, nasha mukti kendra patna, nasha mukti kendra in patna, best nasha mukti kendra in patna, rehab center in patna, drug de addiction center patna";
+        $page_title = "Swetank Nasha Mukti Kendra Mathura | Best De-Addiction & Rehab Center";
+        $page_description = "Swetank Nasha Mukti Kendra in Mathura offers safe, effective addiction treatment, certified medical detox, psychiatric counseling, and 24/7 recovery helpline: 9798354410.";
+        $page_keywords = "swetank nasha mukti kendra mathura, nasha mukti kendra mathura, rehab center mathura, de-addiction center mathura, best nasha mukti kendra mathura";
     ?>
     <?php include("common/head.php"); ?>
     <?php include("common/plugins.php"); ?>
     <style>
-        .hero {
+        /* Hero Split Section */
+        .hero-split {
             position: relative;
-            max-height: 550px;
+            background: linear-gradient(135deg, rgba(7, 26, 39, 0.92) 0%, rgba(10, 37, 64, 0.88) 100%),
+                        url('assets/images/banner/1.jpg') center center/cover no-repeat;
+            padding: 60px 0 70px;
+            color: #ffffff;
             overflow: hidden;
-            background: #000;
         }
 
-        .carousel-item img {
-            height: 550px;
-            object-fit: cover;
-            object-position: center;
-            filter: brightness(0.8);
-        }
-
-        .hero-overlay {
+        .hero-split::before {
+            content: '';
             position: absolute;
             top: 0;
             left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 10;
-            background: rgba(0, 0, 0, 0.2);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            color: white;
-            padding: 20px;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at top right, rgba(34, 197, 94, 0.15), transparent 50%),
+                        radial-gradient(circle at bottom left, rgba(2, 132, 199, 0.15), transparent 50%);
+            pointer-events: none;
         }
 
-        .hero-text-top {
-            font-size: 1.4rem;
+        .hero-tag-badge {
+            background: rgba(255, 255, 255, 0.12);
+            backdrop-filter: blur(6px);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            color: #fef08a;
+            padding: 6px 16px;
+            border-radius: 30px;
+            font-size: 13.5px;
             font-weight: 700;
-            margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 12px;
         }
 
-        .hero-text-main {
-            font-size: 3.5rem;
-            font-weight: 900;
-            margin-bottom: 25px;
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+        .hero-main-title {
+            font-size: clamp(28px, 4vw, 44px);
+            font-weight: 800;
+            line-height: 1.2;
+            color: #ffffff;
+            margin-bottom: 12px;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
         }
 
-        .hero-text-call {
-            font-size: 2rem;
-            font-weight: 700;
-            margin-bottom: 15px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        .hero-main-title span.text-highlight {
+            color: #4ade80;
+        }
+
+        .hero-sub-text {
+            font-size: clamp(15px, 2vw, 18px);
+            color: #cbd5e1;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .hero-cta-group {
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
         }
 
-        .hero-call-btn {
-            background: #62d2e4;
-            color: white !important;
-            font-size: 3rem;
-            font-weight: 900;
-            padding: 20px 60px;
-            border-radius: 25px;
+        .hero-btn-call {
+            background: linear-gradient(135deg, #e11d48 0%, #be123c 100%);
+            color: #ffffff !important;
+            font-size: 18px;
+            font-weight: 800;
+            padding: 12px 26px;
+            border-radius: 50px;
             text-decoration: none;
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 8px 20px rgba(225, 29, 72, 0.35);
+            border: 2px solid rgba(255, 255, 255, 0.3);
             transition: all 0.3s ease;
-            font-family: 'Inter', sans-serif;
-            border: 4px solid white;
         }
 
-        .hero-call-btn:hover {
-            transform: translateY(-5px) scale(1.02);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        .hero-btn-call:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 25px rgba(225, 29, 72, 0.45);
         }
 
-        @media (max-width: 992px) {
-            .hero-text-main { font-size: 2.5rem; }
-            .hero-call-btn { font-size: 2.2rem; padding: 15px 40px; }
+        .hero-btn-wa {
+            background: #25D366;
+            color: #ffffff !important;
+            font-size: 15px;
+            font-weight: 700;
+            padding: 12px 22px;
+            border-radius: 50px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            transition: all 0.3s ease;
         }
 
-        @media (max-width: 768px) {
-            .hero-text-top { font-size: 1rem; }
-            .hero-text-main { font-size: 1.8rem; margin-bottom: 15px; }
-            .hero-text-call { font-size: 1.3rem; }
-            .hero-call-btn { font-size: 1.6rem; padding: 12px 30px; border-radius: 15px; border-width: 3px; }
-            .hero-overlay { padding: 10px; }
+        .hero-btn-wa:hover {
+            transform: translateY(-2px);
+            background: #1ebd5a;
+        }
+
+        .hero-badges-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .hero-badge-pill {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            padding: 8px 12px;
+            border-radius: 8px;
+            font-size: 13px;
+            font-weight: 600;
+            color: #f1f5f9;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .hero-badge-pill i {
+            color: #4ade80;
+        }
+
+        /* Hero Right Form Card */
+        .hero-form-box {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 28px 24px;
+            box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
+            border-top: 5px solid #16a34a;
+            color: #0f172a;
+        }
+
+        .form-header-title {
+            text-align: center;
+            margin-bottom: 18px;
+        }
+
+        .form-header-title h4 {
+            font-size: 20px;
+            font-weight: 800;
+            color: #071a27;
+            margin-bottom: 3px;
+        }
+
+        .form-header-title p {
+            font-size: 12.5px;
+            color: #64748b;
+            margin-bottom: 0;
+        }
+
+        .hero-form-box .form-control,
+        .hero-form-box .form-select {
+            border: 1.5px solid #cbd5e1;
+            border-radius: 8px;
+            padding: 10px 12px;
+            font-size: 13.5px;
+            background: #f8fafc;
+        }
+
+        .hero-form-box .form-control:focus,
+        .hero-form-box .form-select:focus {
+            border-color: #16a34a;
+            background: #ffffff;
+            box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.15);
+        }
+
+        .btn-submit-hero-form {
+            background: linear-gradient(135deg, #16a34a 0%, #15803d 100%);
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 15px;
+            border-radius: 8px;
+            padding: 12px;
+            border: none;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            box-shadow: 0 4px 15px rgba(22, 163, 74, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .btn-submit-hero-form:hover {
+            background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+            transform: translateY(-2px);
+        }
+
+        /* Emergency strip */
+        .emergency-banner {
+            background: #fef2f2;
+            border-bottom: 1px solid #fee2e2;
+            padding: 12px 15px;
+            text-align: center;
+            font-size: 14px;
+            color: #991b1b;
+            font-weight: 600;
         }
     </style>
 </head>
 
 <body>
     <?php include("common/header.php"); ?>
-    <!-- ==================================== -->
-    <section class="hero">
-        <div class="hero-overlay">
-            <div class="hero-text-top">सबसे Affordable और सुरक्षित केंद्र in Patna</div>
-            <div class="hero-text-main">Swetank Nasha Mukti Kendra</div>
-            <div class="hero-text-call">📞 संपर्क करें</div>
-            <a href="tel:+917352447232" class="hero-call-btn">73524 47232</a>
-        </div>
-        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="false">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="assets/images/gallery/abc.jpg" class="d-block w-100" alt="Swetank Nasha Mukti Kendra Patna">
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/images/gallery/abc2.jpg" class="d-block w-100" alt="Swetank Nasha Mukti Kendra Patna">
-                </div>
-            </div>
 
-            <!-- Carousel Controls -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </button>
+    <!-- ================= HERO SECTION WITH SPLIT LAYOUT ================= -->
+    <section class="hero-split">
+        <div class="container position-relative" style="z-index: 2;">
+            <div class="row align-items-center gy-4">
+                
+                <!-- Left Hero Content -->
+                <div class="col-lg-7 text-start">
+                    <div class="hero-tag-badge">
+                        <i class="bi bi-shield-fill-check text-warning"></i> 100% Confidential &amp; Safe Care
+                    </div>
+                    
+                    <h1 class="hero-main-title">
+                        Swetank <span class="text-highlight">नशा मुक्ति केंद्र</span>, मथुरा
+                        <br>
+                        <span style="font-size: 0.85em; font-weight: 700;">A Fresh Start to an Addiction-Free Life</span>
+                    </h1>
+                    
+                    <p class="hero-sub-text">
+                        मथुरा का विश्वसनीय नशा मुक्ति एवं पुनर्वास मार्गदर्शन केंद्र। शराब, ड्रग्स एवं मानसिक तनाव से सुरक्षित व स्थायी मुक्ति। 24/7 मेडिकल परामर्श व मनोवैज्ञानिक देखभाल।
+                    </p>
+
+                    <div class="hero-cta-group">
+                        <a href="tel:+919798354410" class="hero-btn-call">
+                            <i class="bi bi-telephone-fill"></i> 9798354410 (24x7 Call)
+                        </a>
+                        <a href="https://wa.me/919798354410?text=Hello%20Swetank%20Nasha%20Mukti%20Kendra%20Mathura,%20I%20need%20admission%20help." target="_blank" class="hero-btn-wa">
+                            <i class="bi bi-whatsapp"></i> WhatsApp Help
+                        </a>
+                    </div>
+
+                    <div class="hero-badges-grid">
+                        <div class="hero-badge-pill">
+                            <i class="bi bi-check-circle-fill"></i> 24/7 Helpline &amp; Admissions
+                        </div>
+                        <div class="hero-badge-pill">
+                            <i class="bi bi-check-circle-fill"></i> Experienced Counselors
+                        </div>
+                        <div class="hero-badge-pill">
+                            <i class="bi bi-check-circle-fill"></i> Safe &amp; Homely Environment
+                        </div>
+                        <div class="hero-badge-pill">
+                            <i class="bi bi-check-circle-fill"></i> Yoga &amp; Mind Healing
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Hero Form Fill -->
+                <div class="col-lg-5">
+                    <div class="hero-form-box">
+                        <div class="form-header-title">
+                            <span class="badge bg-success-subtle text-success border border-success-subtle px-3 py-1 mb-2">24x7 Immediate Assistance</span>
+                            <h4>निःशुल्क परामर्श फॉर्म</h4>
+                            <p>Immediate Confidential Callback from Specialists</p>
+                        </div>
+
+                        <form id="heroQuickForm" onsubmit="handleHeroFormSubmit(event)">
+                            <div class="mb-3">
+                                <label for="hname" class="form-label fw-semibold text-dark" style="font-size: 13px;">Full Name / आपका नाम <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="hname" placeholder="Enter Full Name" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="hphone" class="form-label fw-semibold text-dark" style="font-size: 13px;">Mobile Number / मोबाइल नंबर <span class="text-danger">*</span></label>
+                                <input type="tel" class="form-control" id="hphone" placeholder="उदा. 9798354410" pattern="[0-9]{10}" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="hcity" class="form-label fw-semibold text-dark" style="font-size: 13px;">City / शहर (Location)</label>
+                                <input type="text" class="form-control" id="hcity" placeholder="Mathura, UP" value="Mathura">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="hservice" class="form-label fw-semibold text-dark" style="font-size: 13px;">Treatment Required / सेवा चयन</label>
+                                <select class="form-select" id="hservice">
+                                    <option value="Alcohol Addiction Treatment">Alcohol / शराब नशा मुक्ति</option>
+                                    <option value="Drugs Addiction Treatment">Drugs / ड्रग्स व स्मैक</option>
+                                    <option value="Marijuana Addiction Treatment">Marijuana &amp; Ganja / गांजा</option>
+                                    <option value="Whitener Addiction Treatment">Whitener &amp; Inhalants / व्हाइटनर</option>
+                                    <option value="Heroin Addiction Treatment">Heroin / हेरोइन</option>
+                                    <option value="Psychological & Family Counseling">Family Counseling / परामर्श</option>
+                                </select>
+                            </div>
+
+                            <button type="submit" class="btn-submit-hero-form">
+                                <i class="bi bi-send-fill"></i> तुरंत परामर्श प्राप्त करें (Send Inquiry)
+                            </button>
+
+                            <div class="text-center mt-2" style="font-size: 11.5px; color: #64748b;">
+                                <i class="bi bi-lock-fill text-success"></i> 100% Confidential &amp; Safe Guidance
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </section>
 
+    <!-- Emergency Strip -->
+    <div class="emergency-banner">
+        <div class="container d-flex justify-content-center align-items-center flex-wrap gap-2">
+            <span class="badge bg-danger text-white text-uppercase px-2 py-1">Emergency Admission</span>
+            <span>क्या आपका कोई अपना गंभीर नशे की समस्या से पीड़ित है? तुरंत कॉल करें:</span>
+            <a href="tel:+919798354410" class="text-danger fw-bold text-decoration-underline">+91 9798354410</a>
+        </div>
+    </div>
 
-    <!-- =============================================================== -->
-    <section class="py-5 about-us ">
+    <!-- ================= ABOUT US ================= -->
+    <section class="py-5 about-us bg-light">
         <div class="container">
-            <div class="row justify-content-center align-items-center">
+            <div class="row justify-content-center align-items-center gy-4">
                 <div class="head-title text-center mb-3">
-                    <h1>Nasha Mukti Kendra in Patna</h1>
+                    <h2>About <span>Swetank Nasha Mukti Kendra Mathura</span></h2>
                 </div>
-
-
 
                 <div class="col-md-6">
                     <p class="text-muted">
-                        <strong class="text-muted">Swetank Life Care Treatments & Mental Rehabilitation Centre</strong>
-                        is
-                        one of the leading centers in Patna, trusted as the <strong class="text-muted">best nasha
-                            mukti kendra patna</strong>
-                        facility for those struggling with addiction. We are committed to helping individuals and
-                        families
-                        overcome the challenges of substance abuse with compassion, expertise, and a structured recovery
-                        process. As a premier <a href="<?= $base_url ?>nasha-mukti-kendra-patna" class="text-decoration-none fw-bold" style="color: var(--primary-color);">rehab center in patna</a>, 
-                        serving areas like <a href="<?= $base_url ?>nasha-mukti-kendra-danapur" class="text-decoration-none">Danapur</a>, 
-                        <a href="<?= $base_url ?>nasha-mukti-kendra-kankarbagh" class="text-decoration-none">Kankarbagh</a>, 
-                        <a href="<?= $base_url ?>nasha-mukti-kendra-boring-road" class="text-decoration-none">Boring Road</a>, 
-                        <a href="<?= $base_url ?>nasha-mukti-kendra-bailey-road" class="text-decoration-none">Bailey Road</a>, 
-                        and <a href="<?= $base_url ?>nasha-mukti-kendra-rajendra-nagar" class="text-decoration-none">Rajendra Nagar</a>, 
-                        we provide life-changing support to those in need.
+                        <strong class="text-dark">Swetank Life Care Treatments &amp; Mental Rehabilitation Centre</strong>
+                        is a premier institution dedicated to providing compassionate, scientific, and ethical de-addiction services in <strong>Mathura, Uttar Pradesh</strong>. We are committed to helping individuals and families overcome the challenges of substance abuse with structured recovery programs.
                     </p>
  
                     <p class="text-muted">
-                        Our <strong class="text-muted">nasha mukti kendra patna</strong> is designed to provide a safe and
-                        healing
-                        environment where patients feel supported at every step. From medically supervised detox
-                        programs to
-                        personalized counseling, therapy sessions, and wellness activities, we ensure complete physical,
-                        emotional, and psychological care. Each recovery journey is guided by experienced doctors,
-                        therapists, and counselors who are dedicated to long-term healing at our <strong class="text-muted">rehab center in patna</strong>.
+                        Our center provides a safe, disciplined, and nurturing environment where patients receive 24/7 medical supervision, individualized psychological counseling, and holistic therapies including daily yoga and meditation.
                     </p>
  
                     <p class="text-muted">
-                        At Swetank, we follow a holistic approach that not only addresses addiction but also promotes
-                        positive lifestyle changes. Our treatment plans include group therapy, one-to-one counseling,
-                        yoga, meditation, and continuous family support. By combining medical expertise with mental and
-                        emotional rehabilitation, our <strong class="text-muted">rehabilitation centre patna</strong>
-                        empowers
-                        individuals to regain self-confidence and live a healthier, addiction-free life. If you are 
-                        looking for the most effective <strong class="text-muted">nasha mukti kendra patna</strong>, 
-                        we are here to help.
-                    </p>
- 
-                    <p class="text-muted">
-                        We believe that recovery is not just about quitting addiction but building a new path filled
-                        with
-                        hope, positivity, and personal growth. If you are searching for a trusted <strong class="text-muted">nasha mukti kendra patna</strong>,
-                        Swetank stands as your reliable partner in transformation – where every recovery is possible and every
-                        life is valued. Our <strong class="text-muted">rehab center in patna</strong> is dedicated to 
-                        your success.
+                        We believe that recovery is not just about quitting addiction but building a new path filled with hope, self-respect, and personal growth.
                     </p>
 
                     <div class="py-1">
-                        <a href="about-us.php" class="btn-pro">
-                            Read More
+                        <a href="about-us.php" class="btn btn-primary fw-bold px-4 py-2" style="border-radius: 8px;">
+                            Read More About Us
                         </a>
                     </div>
                 </div>
 
                 <div class="col-md-6 mb-3">
-                    <img src="<?= $base_url ?>/assets/images/about/1.jpg" alt="Nasha Mukti Kendra Bailey Road" class="img-fluid rounded shadow">
+                    <img src="<?= $base_url ?>/assets/images/about/1.jpg" alt="Swetank Nasha Mukti Kendra Mathura" class="img-fluid rounded shadow">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ================================================================ -->
+    <!-- ================= SERVICES ================= -->
     <section class="py-5 services">
         <div class="container">
             <div class="row">
                 <div class="head-title mb-4 text-center">
-                    <h2>Our <span>Nasha Mukti Services & Treatments in Patna</span></h2>
+                    <h2>Our <span>De-Addiction Services &amp; Treatments</span></h2>
                     <p class="text-muted">
-                        At <strong>Swetank Nasha Mukti Kendra</strong>, we provide effective and
-                        result-oriented <strong>addiction treatments</strong> and
-                        <strong>mental health care</strong> to help individuals recover and live a healthier life.
+                        At <strong>Swetank Nasha Mukti Kendra</strong>, we provide effective, result-oriented <strong>addiction treatments</strong> and <strong>mental health care</strong>.
                     </p>
                 </div>
             </div>
@@ -222,344 +382,163 @@
             <div class="row g-4">
                 <!-- Alcohol Addiction -->
                 <div class="col-md-4">
-                    <div class="card service-card h-100 shadow-sm">
+                    <div class="card service-card h-100 shadow-sm border-0">
                         <div class="card-img-wrapper">
-                            <img src="<?= $base_url ?>/assets/images/services/1.jpg" class="card-img-top"
-                                alt="Alcohol Addiction Treatment in Patna">
+                            <img src="<?= $base_url ?>/assets/images/services/1.jpg" class="card-img-top" alt="Alcohol Addiction Treatment">
                             <div class="card-overlay">
-                                <a href="<?= $base_url ?>services/alcohol-addiction.php" class="btn btn-overlay">Read
-                                    More</a>
+                                <a href="<?= $base_url ?>services/alcohol-addiction.php" class="btn btn-overlay">Read More</a>
                             </div>
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">Alcohol Addiction Treatment</h5>
-                            <p class="card-text">Comprehensive recovery programs for <strong>alcohol addiction</strong>
-                                including medical detox, therapy sessions, and counseling for long-term sobriety.</p>
+                            <h5 class="card-title fw-bold">Alcohol Addiction Treatment</h5>
+                            <p class="card-text text-muted">Comprehensive recovery programs for alcohol addiction including medical detox, therapy sessions, and relapse prevention counseling.</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Drug Addiction -->
                 <div class="col-md-4">
-                    <div class="card service-card h-100 shadow-sm">
+                    <div class="card service-card h-100 shadow-sm border-0">
                         <div class="card-img-wrapper">
-                            <img src="<?= $base_url ?>/assets/images/services/2.jpg" class="card-img-top"
-                                alt="Drug Addiction Treatment in Patna">
+                            <img src="<?= $base_url ?>/assets/images/services/2.jpg" class="card-img-top" alt="Drug Addiction Treatment">
                             <div class="card-overlay">
-                                <a href="<?= $base_url ?>services/drugs-addiction.php" class="btn btn-overlay">Read
-                                    More</a>
+                                <a href="<?= $base_url ?>services/drugs-addiction.php" class="btn btn-overlay">Read More</a>
                             </div>
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">Drug Addiction Treatment</h5>
-                            <p class="card-text">Specialized programs for <strong>drug addiction</strong> including
-                                heroin,
-                                cocaine, and other substances, with structured therapy and rehab care.</p>
+                            <h5 class="card-title fw-bold">Drug Addiction Treatment</h5>
+                            <p class="card-text text-muted">Specialized programs for substance abuse including heroin, cocaine, smack, and prescription drugs with structured rehab care.</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Marijuana Addiction -->
                 <div class="col-md-4">
-                    <div class="card service-card h-100 shadow-sm">
+                    <div class="card service-card h-100 shadow-sm border-0">
                         <div class="card-img-wrapper">
-                            <img src="<?= $base_url ?>/assets/images/services/3.jpg" class="card-img-top"
-                                alt="Marijuana Addiction Rehabilitation Patna">
+                            <img src="<?= $base_url ?>/assets/images/services/3.jpg" class="card-img-top" alt="Marijuana Addiction Treatment">
                             <div class="card-overlay">
-                                <a href="<?= $base_url ?>services/marijuana-addiction.php" class="btn btn-overlay">Read
-                                    More</a>
+                                <a href="<?= $base_url ?>services/marijuana-addiction.php" class="btn btn-overlay">Read More</a>
                             </div>
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">Marijuana Addiction Treatment</h5>
-                            <p class="card-text">Tailored recovery plans for individuals struggling with
-                                <strong>marijuana addiction</strong>, focusing on behavioral therapy and relapse
-                                prevention.
-                            </p>
+                            <h5 class="card-title fw-bold">Marijuana &amp; Ganja Treatment</h5>
+                            <p class="card-text text-muted">Tailored recovery plans focusing on cognitive behavioral therapy, motivation enhancement, and psychological stability.</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Whitener Addiction -->
                 <div class="col-md-4">
-                    <div class="card service-card h-100 shadow-sm">
+                    <div class="card service-card h-100 shadow-sm border-0">
                         <div class="card-img-wrapper">
-                            <img src="<?= $base_url ?>/assets/images/services/4.jpg" class="card-img-top"
-                                alt="Whitener Addiction Treatment in Patna">
+                            <img src="<?= $base_url ?>/assets/images/services/4.jpg" class="card-img-top" alt="Whitener Addiction Treatment">
                             <div class="card-overlay">
-                                <a href="<?= $base_url ?>services/whitener-addiction.php" class="btn btn-overlay">Read
-                                    More</a>
+                                <a href="<?= $base_url ?>services/whitener-addiction.php" class="btn btn-overlay">Read More</a>
                             </div>
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">Whitener Addiction Treatment</h5>
-                            <p class="card-text">Effective therapy and counseling sessions to overcome
-                                <strong>whitener addiction</strong> and promote healthier coping mechanisms.
-                            </p>
+                            <h5 class="card-title fw-bold">Whitener &amp; Inhalants Treatment</h5>
+                            <p class="card-text text-muted">Empathetic therapy and counseling sessions to overcome inhalant addiction and build healthy lifestyle habits.</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Heroin Addiction -->
                 <div class="col-md-4">
-                    <div class="card service-card h-100 shadow-sm">
+                    <div class="card service-card h-100 shadow-sm border-0">
                         <div class="card-img-wrapper">
-                            <img src="<?= $base_url ?>/assets/images/services/5.jpg" class="card-img-top"
-                                alt="Heroin Addiction Treatment in Patna">
+                            <img src="<?= $base_url ?>/assets/images/services/5.jpg" class="card-img-top" alt="Heroin Addiction Treatment">
                             <div class="card-overlay">
-                                <a href="<?= $base_url ?>services/heroin-addiction.php" class="btn btn-overlay">Read
-                                    More</a>
+                                <a href="<?= $base_url ?>services/heroin-addiction.php" class="btn btn-overlay">Read More</a>
                             </div>
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">Heroin Addiction Treatment</h5>
-                            <p class="card-text">A combination of <strong>detoxification</strong>, therapy, and medical
-                                supervision to help patients recover from <strong>heroin addiction</strong>.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Cocaine Addiction -->
-                <div class="col-md-4">
-                    <div class="card service-card h-100 shadow-sm">
-                        <div class="card-img-wrapper">
-                            <img src="<?= $base_url ?>/assets/images/services/6.png" class="card-img-top"
-                                alt="Cocaine Addiction Treatment in Patna">
-                            <div class="card-overlay">
-                                <a href="<?= $base_url ?>services/cocaine-addiction.php" class="btn btn-overlay">Read
-                                    More</a>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Cocaine Addiction Treatment</h5>
-                            <p class="card-text">Structured recovery plans for <strong>cocaine addiction</strong>, with
-                                therapy, counseling, and relapse prevention techniques.</p>
+                            <h5 class="card-title fw-bold">Heroin &amp; Smack Protocol</h5>
+                            <p class="card-text text-muted">Medically assisted withdrawal management, individual counseling, and family rehabilitation support.</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Detoxification -->
                 <div class="col-md-4">
-                    <div class="card service-card h-100 shadow-sm">
+                    <div class="card service-card h-100 shadow-sm border-0">
                         <div class="card-img-wrapper">
-                            <img src="<?= $base_url ?>/assets/images/services/7.jpg" class="card-img-top"
-                                alt="Detoxification Treatment in Patna">
+                            <img src="<?= $base_url ?>/assets/images/services/7.jpg" class="card-img-top" alt="Detoxification Treatment">
                             <div class="card-overlay">
-                                <a href="<?= $base_url ?>services/detoxification.php" class="btn btn-overlay">Read
-                                    More</a>
+                                <a href="<?= $base_url ?>services/detoxification.php" class="btn btn-overlay">Read More</a>
                             </div>
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">Detoxification Programs</h5>
-                            <p class="card-text">Safe and medically supervised <strong>detoxification</strong>
-                                treatments
-                                to cleanse the body and prepare individuals for rehabilitation.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Depression Treatment -->
-                <div class="col-md-4">
-                    <div class="card service-card h-100 shadow-sm">
-                        <div class="card-img-wrapper">
-                            <img src="<?= $base_url ?>/assets/images/services/8.jpg" class="card-img-top"
-                                alt="Depression Treatment in Patna">
-                            <div class="card-overlay">
-                                <a href="<?= $base_url ?>services/depression-treatment.php" class="btn btn-overlay">Read
-                                    More</a>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Depression Treatment</h5>
-                            <p class="card-text">Professional therapy and medical support to manage and recover from
-                                <strong>depression</strong>, ensuring emotional and mental well-being.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Mental Health -->
-                <div class="col-md-4">
-                    <div class="card service-card h-100 shadow-sm">
-                        <div class="card-img-wrapper">
-                            <img src="<?= $base_url ?>/assets/images/services/9.jpg" class="card-img-top"
-                                alt="Mental Health Treatment in Patna">
-                            <div class="card-overlay">
-                                <a href="<?= $base_url ?>services/mental-health.php" class="btn btn-overlay">Read
-                                    More</a>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Mental Health Counseling</h5>
-                            <p class="card-text text-muted">Holistic <strong>mental health treatment</strong> and
-                                counseling
-                                sessions
-                                to build positivity, emotional strength, and long-term recovery.</p>
+                            <h5 class="card-title fw-bold">Detoxification Programs</h5>
+                            <p class="card-text text-muted">Safe and medically supervised detoxification to cleanse the body safely and prepare individuals for sustainable recovery.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- ================================================================ -->
+
+    <!-- ================= SLIDER / GALLERY ================= -->
     <?php include("slider.php"); ?>
-    <!-- ============================================================== -->
-    <!-- =============================================================== -->
-    <section class="why-choose py-5">
+
+    <!-- ================= WHY CHOOSE US ================= -->
+    <section class="why-choose py-5 bg-white">
         <div class="container">
-            <div class="row align-items-center">
-                <!-- Left Side Image -->
-                <div class="col-md-5 mb-1 mb-md-0">
-                    <div class="col-12 mb-2 image-2">
-                        <img src="<?= $base_url ?>/assets/images/about/about.jpg" alt="Why Choose Swetank Nasha Mukti Kendra in Patna"
-                            class="img-fluid ">
-                    </div>
+            <div class="row align-items-center gy-4">
+                <div class="col-md-5">
+                    <img src="<?= $base_url ?>/assets/images/about/about.jpg" alt="Why Choose Swetank Nasha Mukti Kendra" class="img-fluid rounded shadow">
                 </div>
 
-                <!-- Right Side Content -->
                 <div class="col-md-7">
-                    <div class="head-title mb-2">
+                    <div class="head-title mb-3 text-start">
                         <h2>Why Choose <span>Swetank Nasha Mukti Kendra</span>?</h2>
                     </div>
-                    <p>
-                        At <strong>Swetank Nasha Mukti Kendra in Patna</strong>, we are committed to providing
-                        ethical, compassionate, and effective care for individuals struggling with
-                        <strong>alcohol addiction</strong>, <strong>drug addiction</strong>,
-                        and <strong>mental health challenges</strong>.
-                        Our team of experienced doctors, counselors, and therapists create
-                        personalized recovery plans for each patient.
+                    <p class="text-muted">
+                        At <strong>Swetank Nasha Mukti Kendra Mathura</strong>, we are committed to providing ethical, compassionate, and effective care for individuals struggling with alcohol addiction, drug dependence, and behavioral health challenges.
                     </p>
-                    <p>
-                        With structured programs including <strong>detoxification</strong>,
-                        <strong>counseling sessions</strong>, <strong>yoga and meditation</strong>,
-                        and <strong>12-step recovery programs</strong>, we ensure a holistic approach
-                        that focuses on the physical, mental, and emotional well-being of every individual.
+                    <p class="text-muted">
+                        With structured programs including <strong>medical detoxification</strong>, <strong>1-on-1 counseling</strong>, <strong>daily yoga &amp; meditation</strong>, and <strong>family support meetings</strong>, we ensure a holistic approach that restores physical health and peace of mind.
                     </p>
-
-
+                    <div class="d-flex gap-3 mt-3">
+                        <a href="tel:+919798354410" class="btn btn-danger fw-bold px-4 py-2" style="border-radius: 8px;">
+                            <i class="bi bi-telephone-fill"></i> Call 9798354410
+                        </a>
+                        <a href="https://wa.me/919798354410" target="_blank" class="btn btn-success fw-bold px-4 py-2" style="border-radius: 8px;">
+                            <i class="bi bi-whatsapp"></i> Chat on WhatsApp
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ================================================================ -->
+    <!-- ================= TESTIMONIALS & FAQ ================= -->
     <?php include("testimonials.php"); ?>
-    <!-- ================================================================ -->
-
-    <!-- ================================================================ -->
-    <!-- ================= OUR LOCATIONS SECTION (Image Style) ================= -->
-    <section class="our-locations-new py-5 bg-white border-top">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 mb-4">
-                    <h2 class="fw-bold text-uppercase" style="letter-spacing: 1px; color: #000; font-size: 2.5rem;">OUR LOCATIONS</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <ul class="list-unstyled">
-                        <li class="mb-3">
-                            <a href="<?= $base_url ?>nasha-mukti-kendra-patna" class="text-decoration-none d-flex align-items-center location-link-new">
-                                <i class="bi bi-check-lg me-3 text-primary"></i> Nasha Mukti Kendra In Patna
-                            </a>
-                        </li>
-                        <li class="mb-3">
-                            <a href="<?= $base_url ?>nasha-mukti-kendra-danapur" class="text-decoration-none d-flex align-items-center location-link-new">
-                                <i class="bi bi-check-lg me-3 text-primary"></i> Nasha Mukti Kendra In Danapur
-                            </a>
-                        </li>
-                        <li class="mb-3">
-                            <a href="<?= $base_url ?>nasha-mukti-kendra-kankarbagh" class="text-decoration-none d-flex align-items-center location-link-new">
-                                <i class="bi bi-check-lg me-3 text-primary"></i> Nasha Mukti Kendra In Kankarbagh
-                            </a>
-                        </li>
-                        
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <ul class="list-unstyled">
-                        <li class="mb-3">
-                            <a href="<?= $base_url ?>nasha-mukti-kendra-boring-road" class="text-decoration-none d-flex align-items-center location-link-new">
-                                <i class="bi bi-check-lg me-3 text-primary"></i> Nasha Mukti Kendra In Boring Road
-                            </a>
-                        </li>
-                        <li class="mb-3">
-                            <a href="<?= $base_url ?>nasha-mukti-kendra-bailey-road" class="text-decoration-none d-flex align-items-center location-link-new">
-                                <i class="bi bi-check-lg me-3 text-primary"></i> Nasha Mukti Kendra In Bailey Road
-                            </a>
-                        </li>
-                        <li class="mb-3">
-                            <a href="<?= $base_url ?>nasha-mukti-kendra-rajendra-nagar" class="text-decoration-none d-flex align-items-center location-link-new">
-                                <i class="bi bi-check-lg me-3 text-primary"></i> Nasha Mukti Kendra In Rajendra Nagar
-                            </a>
-                        </li>
-
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <style>
-    .location-link-new {
-        color: #34495e;
-        font-size: 1.2rem;
-        font-weight: 500;
-        transition: all 0.3s ease;
-    }
-    .location-link-new:hover {
-        color: var(--primary-color);
-        padding-left: 10px;
-    }
-    .location-link-new i {
-        font-size: 1.4rem;
-        -webkit-text-stroke: 1px;
-    }
-    </style>
-    <!-- =============================================================== -->
     <?php include("faq.php"); ?>
-    <!-- ================================================================ -->
     <?php include("contact.php"); ?>
-    <!-- ================================================================ -->
     <?php include("common/footer.php"); ?>
-</body>
-<script>
-    (function () {
-        'use strict';
-        const form = document.getElementById('appointmentForm');
 
-        form.addEventListener('submit', function (event) {
+    <!-- Form Script -->
+    <script>
+        function handleHeroFormSubmit(event) {
             event.preventDefault();
-            if (!form.checkValidity()) {
-                event.stopPropagation();
-            } else {
-                // Collect form data
-                const name = document.getElementById('name').value.trim();
-                const number = document.getElementById('number').value.trim();
-                const service = document.getElementById('service').value;
-                const date = document.getElementById('date').value;
-                const time = document.getElementById('time').value;
+            const name = document.getElementById('hname').value.trim();
+            const phone = document.getElementById('hphone').value.trim();
+            const city = document.getElementById('hcity').value.trim();
+            const service = document.getElementById('hservice').value;
 
-                // WhatsApp number (country code without +)
-                const whatsappNumber = '917352447232';
-
-                // WhatsApp message format
-                const whatsappMessage =
-                    `*New Appointment Request*\n\n` +
-                    `*Name:* ${name}\n` +
-                    `*Mobile:* ${number}\n` +
-                    `*Service:* ${service}\n` +
-                    `*Date:* ${date}\n` +
-                    `*Time:* ${time}`;
-
-                // Encode and open WhatsApp
-                const encodedMessage = encodeURIComponent(whatsappMessage);
-                window.open(`https://wa.me/${whatsappNumber}?text=${encodedMessage}`, '_blank');
+            if(!name || !phone) {
+                alert('कृपया अपना नाम और मोबाइल नंबर दर्ज करें।');
+                return;
             }
 
-            form.classList.add('was-validated');
-        });
-    })();
-</script>
-
+            const message = `Hello Swetank Nasha Mukti Kendra Mathura,%0A%0A*New Website Inquiry:*%0A👤 *Name:* ${encodeURIComponent(name)}%0A📱 *Phone:* ${encodeURIComponent(phone)}%0A📍 *City:* ${encodeURIComponent(city)}%0A🩺 *Service:* ${encodeURIComponent(service)}`;
+            
+            window.open(`https://wa.me/919798354410?text=${message}`, '_blank');
+            alert('धन्यवाद! आपकी इन्क्वायरी प्राप्त हो गई है। हमारी टीम आपसे जल्द संपर्क करेगी।');
+            document.getElementById('heroQuickForm').reset();
+        }
+    </script>
+</body>
 </html>

@@ -1,17 +1,15 @@
 <!-- Floating Call & WhatsApp Buttons -->
 <div class="floating-contact">
-  <a href="tel:+917352447232" class="call-btn" title="Call Us">
-    <span class="contact-label">+91 73524 47232</span>
+  <a href="tel:+919798354410" class="call-btn" title="Call Us 24/7">
+    <span class="contact-label">+91 9798354410</span>
     <img src="<?= $base_url ?>assets/images/others/call.jpg" alt="Call Us">
   </a>
 
-  <a href="https://api.whatsapp.com/send?phone=917352447232&text=Hello%20Swetank%20Nasha%20Mukti%20Kendra" class="whatsapp-btn" target="_blank" title="Chat on WhatsApp">
+  <a href="https://api.whatsapp.com/send?phone=919798354410&text=Hello%20Swetank%20Nasha%20Mukti%20Kendra,%20I%20need%20information." class="whatsapp-btn" target="_blank" title="Chat on WhatsApp">
     <span class="contact-label">Chat on WhatsApp</span>
     <img src="<?= $base_url ?>assets/images/others/whatsapp.jpg" alt="Chat on WhatsApp">
   </a>
 </div>
-
-
 
 <style>
    /* Floating Contact Buttons */
