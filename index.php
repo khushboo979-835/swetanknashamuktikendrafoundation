@@ -5,7 +5,7 @@
     <?php include("common/config.php"); ?>
     <?php 
         $page_title = "Swetank Nasha Mukti Kendra Mathura | Best De-Addiction & Rehab Center";
-        $page_description = "Swetank Nasha Mukti Kendra in Mathura offers safe, effective addiction treatment, certified medical detox, psychiatric counseling, and 24/7 recovery helpline: 9798354410.";
+        $page_description = "Swetank Nasha Mukti Kendra in Mathura offers trusted addiction treatment, certified medical detox, psychiatric counseling, and 24/7 recovery helpline: 9798354410.";
         $page_keywords = "swetank nasha mukti kendra mathura, nasha mukti kendra mathura, rehab center mathura, de-addiction center mathura, best nasha mukti kendra mathura";
     ?>
     <?php include("common/head.php"); ?>
@@ -16,7 +16,7 @@
             position: relative;
             background: linear-gradient(135deg, rgba(7, 26, 39, 0.92) 0%, rgba(10, 37, 64, 0.88) 100%),
                         url('assets/images/banner/1.jpg') center center/cover no-repeat;
-            padding: 60px 0 70px;
+            padding: 65px 0 75px;
             color: #ffffff;
             overflow: hidden;
         }
@@ -45,15 +45,15 @@
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            margin-bottom: 12px;
+            margin-bottom: 15px;
         }
 
         .hero-main-title {
-            font-size: clamp(28px, 4vw, 44px);
+            font-size: clamp(28px, 4.2vw, 46px);
             font-weight: 800;
-            line-height: 1.2;
+            line-height: 1.22;
             color: #ffffff;
-            margin-bottom: 12px;
+            margin-bottom: 14px;
             text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
         }
 
@@ -62,18 +62,18 @@
         }
 
         .hero-sub-text {
-            font-size: clamp(15px, 2vw, 18px);
+            font-size: clamp(15px, 1.8vw, 18px);
             color: #cbd5e1;
-            line-height: 1.6;
-            margin-bottom: 20px;
+            line-height: 1.65;
+            margin-bottom: 24px;
         }
 
         .hero-cta-group {
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 14px;
             flex-wrap: wrap;
-            margin-bottom: 20px;
+            margin-bottom: 22px;
         }
 
         .hero-btn-call {
@@ -81,12 +81,12 @@
             color: #ffffff !important;
             font-size: 18px;
             font-weight: 800;
-            padding: 12px 26px;
+            padding: 13px 28px;
             border-radius: 50px;
             text-decoration: none;
             display: inline-flex;
             align-items: center;
-            gap: 8px;
+            gap: 9px;
             box-shadow: 0 8px 20px rgba(225, 29, 72, 0.35);
             border: 2px solid rgba(255, 255, 255, 0.3);
             transition: all 0.3s ease;
@@ -100,9 +100,9 @@
         .hero-btn-wa {
             background: #25D366;
             color: #ffffff !important;
-            font-size: 15px;
+            font-size: 16px;
             font-weight: 700;
-            padding: 12px 22px;
+            padding: 13px 24px;
             border-radius: 50px;
             text-decoration: none;
             display: inline-flex;
@@ -158,14 +158,14 @@
         }
 
         .form-header-title h4 {
-            font-size: 20px;
+            font-size: 21px;
             font-weight: 800;
             color: #071a27;
             margin-bottom: 3px;
         }
 
         .form-header-title p {
-            font-size: 12.5px;
+            font-size: 13px;
             color: #64748b;
             margin-bottom: 0;
         }
@@ -175,7 +175,7 @@
             border: 1.5px solid #cbd5e1;
             border-radius: 8px;
             padding: 10px 12px;
-            font-size: 13.5px;
+            font-size: 14px;
             background: #f8fafc;
         }
 
@@ -190,7 +190,7 @@
             background: linear-gradient(135deg, #16a34a 0%, #15803d 100%);
             color: #ffffff;
             font-weight: 700;
-            font-size: 15px;
+            font-size: 15.5px;
             border-radius: 8px;
             padding: 12px;
             border: none;
@@ -214,7 +214,7 @@
             border-bottom: 1px solid #fee2e2;
             padding: 12px 15px;
             text-align: center;
-            font-size: 14px;
+            font-size: 14.5px;
             color: #991b1b;
             font-weight: 600;
         }
@@ -236,13 +236,13 @@
                     </div>
                     
                     <h1 class="hero-main-title">
-                        Swetank <span class="text-highlight">नशा मुक्ति केंद्र</span>, मथुरा
+                        Swetank <span class="text-highlight">Nasha Mukti Kendra</span>, Mathura
                         <br>
-                        <span style="font-size: 0.85em; font-weight: 700;">A Fresh Start to an Addiction-Free Life</span>
+                        <span style="font-size: 0.82em; font-weight: 700; color: #f8fafc;">A Fresh Start to an Addiction-Free Life</span>
                     </h1>
                     
                     <p class="hero-sub-text">
-                        मथुरा का विश्वसनीय नशा मुक्ति एवं पुनर्वास मार्गदर्शन केंद्र। शराब, ड्रग्स एवं मानसिक तनाव से सुरक्षित व स्थायी मुक्ति। 24/7 मेडिकल परामर्श व मनोवैज्ञानिक देखभाल।
+                        Mathura's premier de-addiction and mental health rehabilitation center. Safe medical detox, personalized psychological counseling, and 24/7 recovery support for alcohol and drug addiction.
                     </p>
 
                     <div class="hero-cta-group">
@@ -259,13 +259,13 @@
                             <i class="bi bi-check-circle-fill"></i> 24/7 Helpline &amp; Admissions
                         </div>
                         <div class="hero-badge-pill">
-                            <i class="bi bi-check-circle-fill"></i> Experienced Counselors
+                            <i class="bi bi-check-circle-fill"></i> Experienced Doctors &amp; Counselors
                         </div>
                         <div class="hero-badge-pill">
                             <i class="bi bi-check-circle-fill"></i> Safe &amp; Homely Environment
                         </div>
                         <div class="hero-badge-pill">
-                            <i class="bi bi-check-circle-fill"></i> Yoga &amp; Mind Healing
+                            <i class="bi bi-check-circle-fill"></i> Daily Yoga &amp; Meditation
                         </div>
                     </div>
                 </div>
@@ -275,44 +275,45 @@
                     <div class="hero-form-box">
                         <div class="form-header-title">
                             <span class="badge bg-success-subtle text-success border border-success-subtle px-3 py-1 mb-2">24x7 Immediate Assistance</span>
-                            <h4>निःशुल्क परामर्श फॉर्म</h4>
-                            <p>Immediate Confidential Callback from Specialists</p>
+                            <h4>Free Consultation Form</h4>
+                            <p>Immediate Confidential Callback from Recovery Specialists</p>
                         </div>
 
                         <form id="heroQuickForm" onsubmit="handleHeroFormSubmit(event)">
                             <div class="mb-3">
-                                <label for="hname" class="form-label fw-semibold text-dark" style="font-size: 13px;">Full Name / आपका नाम <span class="text-danger">*</span></label>
+                                <label for="hname" class="form-label fw-semibold text-dark" style="font-size: 13px;">Full Name <span class="text-danger">*</span></label>
                                 <input type="text" class="form-control" id="hname" placeholder="Enter Full Name" required>
                             </div>
 
                             <div class="mb-3">
-                                <label for="hphone" class="form-label fw-semibold text-dark" style="font-size: 13px;">Mobile Number / मोबाइल नंबर <span class="text-danger">*</span></label>
-                                <input type="tel" class="form-control" id="hphone" placeholder="उदा. 9798354410" pattern="[0-9]{10}" required>
+                                <label for="hphone" class="form-label fw-semibold text-dark" style="font-size: 13px;">Mobile Number <span class="text-danger">*</span></label>
+                                <input type="tel" class="form-control" id="hphone" placeholder="e.g. 9798354410" pattern="[0-9]{10}" required>
                             </div>
 
                             <div class="mb-3">
-                                <label for="hcity" class="form-label fw-semibold text-dark" style="font-size: 13px;">City / शहर (Location)</label>
+                                <label for="hcity" class="form-label fw-semibold text-dark" style="font-size: 13px;">City / Location</label>
                                 <input type="text" class="form-control" id="hcity" placeholder="Mathura, UP" value="Mathura">
                             </div>
 
                             <div class="mb-3">
-                                <label for="hservice" class="form-label fw-semibold text-dark" style="font-size: 13px;">Treatment Required / सेवा चयन</label>
+                                <label for="hservice" class="form-label fw-semibold text-dark" style="font-size: 13px;">Treatment Program Required</label>
                                 <select class="form-select" id="hservice">
-                                    <option value="Alcohol Addiction Treatment">Alcohol / शराब नशा मुक्ति</option>
-                                    <option value="Drugs Addiction Treatment">Drugs / ड्रग्स व स्मैक</option>
-                                    <option value="Marijuana Addiction Treatment">Marijuana &amp; Ganja / गांजा</option>
-                                    <option value="Whitener Addiction Treatment">Whitener &amp; Inhalants / व्हाइटनर</option>
-                                    <option value="Heroin Addiction Treatment">Heroin / हेरोइन</option>
-                                    <option value="Psychological & Family Counseling">Family Counseling / परामर्श</option>
+                                    <option value="Alcohol Addiction Treatment">Alcohol Addiction Treatment</option>
+                                    <option value="Drugs Addiction Treatment">Drugs &amp; Substance Addiction</option>
+                                    <option value="Marijuana Addiction Treatment">Marijuana / Ganja Treatment</option>
+                                    <option value="Whitener Addiction Treatment">Whitener &amp; Inhalants Treatment</option>
+                                    <option value="Heroin Addiction Treatment">Heroin &amp; Opioids Recovery</option>
+                                    <option value="Psychological & Family Counseling">Psychological &amp; Family Counseling</option>
+                                    <option value="Detoxification Program">Medical Detoxification Program</option>
                                 </select>
                             </div>
 
                             <button type="submit" class="btn-submit-hero-form">
-                                <i class="bi bi-send-fill"></i> तुरंत परामर्श प्राप्त करें (Send Inquiry)
+                                <i class="bi bi-send-fill"></i> Get Free Consultation (Send Inquiry)
                             </button>
 
                             <div class="text-center mt-2" style="font-size: 11.5px; color: #64748b;">
-                                <i class="bi bi-lock-fill text-success"></i> 100% Confidential &amp; Safe Guidance
+                                <i class="bi bi-lock-fill text-success"></i> 100% Confidential &amp; Protected Information
                             </div>
                         </form>
                     </div>
@@ -326,7 +327,7 @@
     <div class="emergency-banner">
         <div class="container d-flex justify-content-center align-items-center flex-wrap gap-2">
             <span class="badge bg-danger text-white text-uppercase px-2 py-1">Emergency Admission</span>
-            <span>क्या आपका कोई अपना गंभीर नशे की समस्या से पीड़ित है? तुरंत कॉल करें:</span>
+            <span>Is your loved one struggling with severe addiction? Call Us Immediately:</span>
             <a href="tel:+919798354410" class="text-danger fw-bold text-decoration-underline">+91 9798354410</a>
         </div>
     </div>
@@ -354,14 +355,14 @@
                     </p>
 
                     <div class="py-1">
-                        <a href="about-us.php" class="btn btn-primary fw-bold px-4 py-2" style="border-radius: 8px;">
+                        <a href="about-us.html" class="btn btn-primary fw-bold px-4 py-2" style="border-radius: 8px;">
                             Read More About Us
                         </a>
                     </div>
                 </div>
 
                 <div class="col-md-6 mb-3">
-                    <img src="<?= $base_url ?>/assets/images/about/1.jpg" alt="Swetank Nasha Mukti Kendra Mathura" class="img-fluid rounded shadow">
+                    <img src="<?= $base_url ?>assets/images/about/1.jpg" alt="Swetank Nasha Mukti Kendra Mathura" class="img-fluid rounded shadow">
                 </div>
             </div>
         </div>
@@ -384,9 +385,9 @@
                 <div class="col-md-4">
                     <div class="card service-card h-100 shadow-sm border-0">
                         <div class="card-img-wrapper">
-                            <img src="<?= $base_url ?>/assets/images/services/1.jpg" class="card-img-top" alt="Alcohol Addiction Treatment">
+                            <img src="<?= $base_url ?>assets/images/services/1.jpg" class="card-img-top" alt="Alcohol Addiction Treatment">
                             <div class="card-overlay">
-                                <a href="<?= $base_url ?>services/alcohol-addiction.php" class="btn btn-overlay">Read More</a>
+                                <a href="<?= $base_url ?>services/alcohol-addiction.html" class="btn btn-overlay">Read More</a>
                             </div>
                         </div>
                         <div class="card-body">
@@ -400,9 +401,9 @@
                 <div class="col-md-4">
                     <div class="card service-card h-100 shadow-sm border-0">
                         <div class="card-img-wrapper">
-                            <img src="<?= $base_url ?>/assets/images/services/2.jpg" class="card-img-top" alt="Drug Addiction Treatment">
+                            <img src="<?= $base_url ?>assets/images/services/2.jpg" class="card-img-top" alt="Drug Addiction Treatment">
                             <div class="card-overlay">
-                                <a href="<?= $base_url ?>services/drugs-addiction.php" class="btn btn-overlay">Read More</a>
+                                <a href="<?= $base_url ?>services/drugs-addiction.html" class="btn btn-overlay">Read More</a>
                             </div>
                         </div>
                         <div class="card-body">
@@ -416,9 +417,9 @@
                 <div class="col-md-4">
                     <div class="card service-card h-100 shadow-sm border-0">
                         <div class="card-img-wrapper">
-                            <img src="<?= $base_url ?>/assets/images/services/3.jpg" class="card-img-top" alt="Marijuana Addiction Treatment">
+                            <img src="<?= $base_url ?>assets/images/services/3.jpg" class="card-img-top" alt="Marijuana Addiction Treatment">
                             <div class="card-overlay">
-                                <a href="<?= $base_url ?>services/marijuana-addiction.php" class="btn btn-overlay">Read More</a>
+                                <a href="<?= $base_url ?>services/marijuana-addiction.html" class="btn btn-overlay">Read More</a>
                             </div>
                         </div>
                         <div class="card-body">
@@ -432,9 +433,9 @@
                 <div class="col-md-4">
                     <div class="card service-card h-100 shadow-sm border-0">
                         <div class="card-img-wrapper">
-                            <img src="<?= $base_url ?>/assets/images/services/4.jpg" class="card-img-top" alt="Whitener Addiction Treatment">
+                            <img src="<?= $base_url ?>assets/images/services/4.jpg" class="card-img-top" alt="Whitener Addiction Treatment">
                             <div class="card-overlay">
-                                <a href="<?= $base_url ?>services/whitener-addiction.php" class="btn btn-overlay">Read More</a>
+                                <a href="<?= $base_url ?>services/whitener-addiction.html" class="btn btn-overlay">Read More</a>
                             </div>
                         </div>
                         <div class="card-body">
@@ -448,9 +449,9 @@
                 <div class="col-md-4">
                     <div class="card service-card h-100 shadow-sm border-0">
                         <div class="card-img-wrapper">
-                            <img src="<?= $base_url ?>/assets/images/services/5.jpg" class="card-img-top" alt="Heroin Addiction Treatment">
+                            <img src="<?= $base_url ?>assets/images/services/5.jpg" class="card-img-top" alt="Heroin Addiction Treatment">
                             <div class="card-overlay">
-                                <a href="<?= $base_url ?>services/heroin-addiction.php" class="btn btn-overlay">Read More</a>
+                                <a href="<?= $base_url ?>services/heroin-addiction.html" class="btn btn-overlay">Read More</a>
                             </div>
                         </div>
                         <div class="card-body">
@@ -464,9 +465,9 @@
                 <div class="col-md-4">
                     <div class="card service-card h-100 shadow-sm border-0">
                         <div class="card-img-wrapper">
-                            <img src="<?= $base_url ?>/assets/images/services/7.jpg" class="card-img-top" alt="Detoxification Treatment">
+                            <img src="<?= $base_url ?>assets/images/services/7.jpg" class="card-img-top" alt="Detoxification Treatment">
                             <div class="card-overlay">
-                                <a href="<?= $base_url ?>services/detoxification.php" class="btn btn-overlay">Read More</a>
+                                <a href="<?= $base_url ?>services/detoxification.html" class="btn btn-overlay">Read More</a>
                             </div>
                         </div>
                         <div class="card-body">
@@ -487,7 +488,7 @@
         <div class="container">
             <div class="row align-items-center gy-4">
                 <div class="col-md-5">
-                    <img src="<?= $base_url ?>/assets/images/about/about.jpg" alt="Why Choose Swetank Nasha Mukti Kendra" class="img-fluid rounded shadow">
+                    <img src="<?= $base_url ?>assets/images/about/about.jpg" alt="Why Choose Swetank Nasha Mukti Kendra" class="img-fluid rounded shadow">
                 </div>
 
                 <div class="col-md-7">
@@ -529,14 +530,14 @@
             const service = document.getElementById('hservice').value;
 
             if(!name || !phone) {
-                alert('कृपया अपना नाम और मोबाइल नंबर दर्ज करें।');
+                alert('Please enter your name and 10-digit mobile number.');
                 return;
             }
 
-            const message = `Hello Swetank Nasha Mukti Kendra Mathura,%0A%0A*New Website Inquiry:*%0A👤 *Name:* ${encodeURIComponent(name)}%0A📱 *Phone:* ${encodeURIComponent(phone)}%0A📍 *City:* ${encodeURIComponent(city)}%0A🩺 *Service:* ${encodeURIComponent(service)}`;
+            const message = `Hello Swetank Nasha Mukti Kendra Mathura,%0A%0A*New Website Consultation Inquiry:*%0A👤 *Name:* ${encodeURIComponent(name)}%0A📱 *Phone:* ${encodeURIComponent(phone)}%0A📍 *City:* ${encodeURIComponent(city)}%0A🩺 *Service:* ${encodeURIComponent(service)}`;
             
             window.open(`https://wa.me/919798354410?text=${message}`, '_blank');
-            alert('धन्यवाद! आपकी इन्क्वायरी प्राप्त हो गई है। हमारी टीम आपसे जल्द संपर्क करेगी।');
+            alert('Thank you! Your inquiry has been submitted. Our team will contact you shortly.');
             document.getElementById('heroQuickForm').reset();
         }
     </script>

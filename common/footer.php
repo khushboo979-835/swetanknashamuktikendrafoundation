@@ -147,7 +147,7 @@
                     <img src="<?= $base_url ?>assets/images/logo/logo.jpg" alt="Swetank Nasha Mukti Kendra Logo" class="footer-logo">
                     <div>
                         <div class="footer-brand-title">Swetank</div>
-                        <div class="footer-brand-badge">नशा मुक्ति केंद्र, मथुरा</div>
+                        <div class="footer-brand-badge">Nasha Mukti Kendra, Mathura</div>
                     </div>
                 </div>
                 <p class="text-justify text-muted-light">
@@ -164,11 +164,11 @@
             <div class="col-lg-2 col-md-6">
                 <h3>Quick Links</h3>
                 <ul class="footer-links-list">
-                    <li><a href="<?= $base_url ?>">Home</a></li>
-                    <li><a href="<?= $base_url ?>about-us.php">About Us</a></li>
-                    <li><a href="<?= $base_url ?>gallery.php">Gallery</a></li>
-                    <li><a href="<?= $base_url ?>contact-us.php">Contact Us</a></li>
-                    <li><a href="<?= $base_url ?>faq.php">FAQs</a></li>
+                    <li><a href="<?= $base_url ?>index.html">Home</a></li>
+                    <li><a href="<?= $base_url ?>about-us.html">About Us</a></li>
+                    <li><a href="<?= $base_url ?>gallery.html">Gallery</a></li>
+                    <li><a href="<?= $base_url ?>contact-us.html">Contact Us</a></li>
+                    <li><a href="<?= $base_url ?>faq.html">FAQs</a></li>
                 </ul>
             </div>
 
@@ -176,12 +176,12 @@
             <div class="col-lg-3 col-md-6">
                 <h3>Our Services</h3>
                 <ul class="footer-links-list">
-                    <li><a href="<?= $base_url ?>services/alcohol-addiction.php">Alcohol Addiction Treatment</a></li>
-                    <li><a href="<?= $base_url ?>services/drugs-addiction.php">Drug Addiction Treatment</a></li>
-                    <li><a href="<?= $base_url ?>services/marijuana-addiction.php">Marijuana Addiction Treatment</a></li>
-                    <li><a href="<?= $base_url ?>services/whitener-addiction.php">Whitener Addiction Treatment</a></li>
-                    <li><a href="<?= $base_url ?>services/heroin-addiction.php">Heroin Addiction Treatment</a></li>
-                    <li><a href="<?= $base_url ?>services/detoxification.php">Detoxification</a></li>
+                    <li><a href="<?= $base_url ?>services/alcohol-addiction.html">Alcohol Addiction Treatment</a></li>
+                    <li><a href="<?= $base_url ?>services/drugs-addiction.html">Drug Addiction Treatment</a></li>
+                    <li><a href="<?= $base_url ?>services/marijuana-addiction.html">Marijuana Addiction Treatment</a></li>
+                    <li><a href="<?= $base_url ?>services/whitener-addiction.html">Whitener Addiction Treatment</a></li>
+                    <li><a href="<?= $base_url ?>services/heroin-addiction.html">Heroin Addiction Treatment</a></li>
+                    <li><a href="<?= $base_url ?>services/detoxification.html">Detoxification</a></li>
                 </ul>
             </div>
 
@@ -190,7 +190,7 @@
                 <h3>Contact &amp; Location</h3>
                 <p>
                     <i class="bi bi-geo-alt-fill text-danger me-1"></i>
-                    <strong>Address:</strong> Mathura, Uttar Pradesh - 281001 (नशा मुक्ति केंद्र, मथुरा)
+                    <strong>Address:</strong> Mathura, Uttar Pradesh - 281001 (Nasha Mukti Kendra, Mathura)
                 </p> 
                 <p>
                     <i class="bi bi-telephone-fill text-warning me-1"></i>

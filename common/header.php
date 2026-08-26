@@ -29,7 +29,7 @@
     .navbar {
         transition: all 0.3s ease;
         background: #ffffff;
-        padding: 8px 15px;
+        padding: 10px 15px;
     }
 
     .navbar-brand {
@@ -55,18 +55,18 @@
     }
 
     .brand-main-title {
-        font-size: 18px;
+        font-size: 19px;
         font-weight: 800;
         color: #071a27;
         letter-spacing: -0.3px;
     }
 
-    .brand-hindi-badge {
+    .brand-sub-badge {
         color: #15803d;
-        font-weight: 800;
+        font-weight: 700;
         font-size: 12px;
         background: #f0fdf4;
-        padding: 1px 7px;
+        padding: 2px 8px;
         border-radius: 4px;
         border: 1px solid #bbf7d0;
         display: inline-block;
@@ -194,12 +194,12 @@
 <header>
     <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <!-- 1. Logo & Formatted Nasha Mukti Kendra Text -->
-            <a class="navbar-brand me-auto gap-2" href="<?= $base_url ?>">
+            <!-- 1. Logo & Formatted English Title -->
+            <a class="navbar-brand me-auto gap-2" href="<?= $base_url ?>index.html">
                 <img src="<?= $base_url ?>assets/images/logo/logo.jpg" alt="Swetank Nasha Mukti Kendra Logo" class="brand-logo-img">
                 <div class="brand-text-wrapper text-start">
                     <span class="brand-main-title">Swetank</span>
-                    <span class="brand-hindi-badge">नशा मुक्ति केंद्र, मथुरा</span>
+                    <span class="brand-sub-badge">Nasha Mukti Kendra, Mathura</span>
                 </div>
             </a>
 
@@ -223,28 +223,28 @@
             <!-- Menu Links & Desktop CTA Buttons -->
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav align-items-lg-center me-lg-3">
-                    <li class="nav-item"><a class="nav-link" href="<?= $base_url ?>">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="<?= $base_url ?>about-us.php">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="<?= $base_url ?>index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="<?= $base_url ?>about-us.html">About Us</a></li>
 
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Services
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
-                            <li><a class="dropdown-item" href="<?= $base_url ?>services/alcohol-addiction.php">Alcohol Addiction Treatment</a></li>
-                            <li><a class="dropdown-item" href="<?= $base_url ?>services/drugs-addiction.php">Drug Addiction Treatment</a></li>
-                            <li><a class="dropdown-item" href="<?= $base_url ?>services/marijuana-addiction.php">Marijuana Addiction Treatment</a></li>
-                            <li><a class="dropdown-item" href="<?= $base_url ?>services/whitener-addiction.php">Whitener Addiction Treatment</a></li>
-                            <li><a class="dropdown-item" href="<?= $base_url ?>services/heroin-addiction.php">Heroin Addiction Treatment</a></li>
-                            <li><a class="dropdown-item" href="<?= $base_url ?>services/cocaine-addiction.php">Cocaine Addiction Treatment</a></li>
-                            <li><a class="dropdown-item" href="<?= $base_url ?>services/detoxification.php">Detoxification Treatment</a></li>
-                            <li><a class="dropdown-item" href="<?= $base_url ?>services/depression-treatment.php">Depression Treatment</a></li>
-                            <li><a class="dropdown-item" href="<?= $base_url ?>services/mental-health.php">Mental Health Treatment</a></li>
+                            <li><a class="dropdown-item" href="<?= $base_url ?>services/alcohol-addiction.html">Alcohol Addiction Treatment</a></li>
+                            <li><a class="dropdown-item" href="<?= $base_url ?>services/drugs-addiction.html">Drug Addiction Treatment</a></li>
+                            <li><a class="dropdown-item" href="<?= $base_url ?>services/marijuana-addiction.html">Marijuana Addiction Treatment</a></li>
+                            <li><a class="dropdown-item" href="<?= $base_url ?>services/whitener-addiction.html">Whitener Addiction Treatment</a></li>
+                            <li><a class="dropdown-item" href="<?= $base_url ?>services/heroin-addiction.html">Heroin Addiction Treatment</a></li>
+                            <li><a class="dropdown-item" href="<?= $base_url ?>services/cocaine-addiction.html">Cocaine Addiction Treatment</a></li>
+                            <li><a class="dropdown-item" href="<?= $base_url ?>services/detoxification.html">Detoxification Treatment</a></li>
+                            <li><a class="dropdown-item" href="<?= $base_url ?>services/depression-treatment.html">Depression Treatment</a></li>
+                            <li><a class="dropdown-item" href="<?= $base_url ?>services/mental-health.html">Mental Health Treatment</a></li>
                         </ul>
                     </li>
 
-                    <li class="nav-item"><a class="nav-link" href="<?= $base_url ?>gallery.php">Gallery</a></li>
-                    <li class="nav-item"><a class="nav-link" href="<?= $base_url ?>contact-us.php">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="<?= $base_url ?>gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="<?= $base_url ?>contact-us.html">Contact Us</a></li>
                 </ul>
 
                 <div class="d-none d-lg-flex align-items-center gap-2">
