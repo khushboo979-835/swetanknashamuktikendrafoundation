@@ -1,0 +1,20 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/", "destination": "/index.html" },
+    { "source": "/about-us", "destination": "/about-us.html" },
+    { "source": "/contact-us", "destination": "/contact-us.html" },
+    { "source": "/gallery", "destination": "/gallery.html" },
+    { "source": "/faq", "destination": "/faq.html" },
+    { "source": "/book-now", "destination": "/book-now.html" },
+    { "source": "/services/alcohol-addiction", "destination": "/services/alcohol-addiction.html" },
+    { "source": "/services/drugs-addiction", "destination": "/services/drugs-addiction.html" },
+    { "source": "/services/marijuana-addiction", "destination": "/services/marijuana-addiction.html" },
+    { "source": "/services/whitener-addiction", "destination": "/services/whitener-addiction.html" },
+    { "source": "/services/heroin-addiction", "destination": "/services/heroin-addiction.html" },
+    { "source": "/services/cocaine-addiction", "destination": "/services/cocaine-addiction.html" },
+    { "source": "/services/detoxification", "destination": "/services/detoxification.html" },
+    { "source": "/services/depression-treatment", "destination": "/services/depression-treatment.html" },
+    { "source": "/services/mental-health", "destination": "/services/mental-health.html" }
+  ]
+}
